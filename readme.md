@@ -1,3 +1,3 @@
-# boilerplate to typescript
+# detective game
 
-add husky, eslint, lint-staged to work if some project
+investigate
