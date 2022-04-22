@@ -18,13 +18,13 @@ don't need login, just give yourself a nick.
 ## v1
 ToDo list:
 
-[] get players logged into the network
+[ ] get players logged into the network
 
 [x] define the function of a player
 
-[] send to frontend their paper
+[ ] send to frontend their paper
 
-[] create screen to players
+[ ] create screen to players
 
-[] save each game data
+[ ] save each game data
 
