@@ -11,15 +11,20 @@ the victms needs to be careful and look to everyone
 When the detective find your suspect, he needs to say: "arrest, in the name's law"
 if he miss, the killer win the game. Otherwise, he saves the day.
 
-### easy play
+## easy play
 Using a wifi connection access the game. every person can create a new room 10 players can connect with the room
 don't need login, just give yourself a nick.
 
-### v1
+## v1
 ToDo list:
+
 [] get players logged into the network
-[] define the function of a player
-[] send to player (frontend) their functions
+
+[x] define the function of a player
+
+[] send to frontend their paper
+
 [] create screen to players
+
 [] save each game data
 
