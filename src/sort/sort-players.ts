@@ -1,13 +1,19 @@
+import { sort } from './sort.interface'
+import utils from '../utils/arrays.tools'
 
-export class Round {
-  private readonly bag = ['assassino', 'detetive']
-  constructor({ players }) {
+export class Round implements sort {
+  private bag = ['assassino', 'detetive']
+  constructor(players: number) {
     for (let index = 0; index < players - 2; index++) {
       this.bag.push('vitima')
     }
   }
-  sortition() {
+
+  sortition(): string {
     const random = Math.floor(Math.random() * this.bag.length)
-    return this.bag[random]
+    const paper = this.bag[random]
+    this.bag = utils.removeFromArray(random, this.bag)
+
+    return paper
   }
 }
