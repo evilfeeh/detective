@@ -1,3 +1,3 @@
 export interface sort {
-  sortition(): string
+  sortition: () => string
 }
