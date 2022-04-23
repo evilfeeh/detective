@@ -4,7 +4,8 @@
   "description": "",
   "main": "./src/index.ts",
   "scripts": {
-    "start": "sucrase-node ./src/index.ts"
+    "start": "sucrase-node ./src/index.ts",
+    "test": "nodemon ./src/index.ts"
   },
   "author": "",
   "devDependencies": {
@@ -20,6 +21,7 @@
     "eslint-plugin-promise": "^5.2.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.4",
+    "nodemon": "^2.0.15",
     "typescript": "^4.6.2"
   },
   "dependencies": {
