@@ -1,3 +1,3 @@
 export interface Players {
-  getPlayer: () => string
+  getPlayer: (user: string) => string
 }

@@ -1,5 +1,5 @@
 export interface home {
-  createRoom: (person: any) => void
-  leaveRoom: () => void
-  closeRoom: () => void
+  createRoom: (io: any) => void
+  leaveRoom: (io: any) => void
+  closeRoom: (io: any) => void
 }
