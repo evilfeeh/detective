@@ -1,4 +1,4 @@
-import { home } from './protocols/home'
+import { home } from './interfaces/home'
 
 export class lobby implements home {
   createRoom ({ person }): void {
