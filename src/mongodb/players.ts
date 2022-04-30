@@ -1,5 +1,5 @@
 import MongoConnection from '../mongodb/connect'
-import { players } from '../mongodb/protocols/players'
+import { players } from './interfaces/players'
 
 export class Players implements players {
   private readonly client: any
