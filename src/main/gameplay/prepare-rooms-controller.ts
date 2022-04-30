@@ -14,8 +14,4 @@ export default class PrepareRoomController implements home {
       socket.leave(socket.id)
     })
   }
-
-  closeRoom (): void {
-
-  }
 }
