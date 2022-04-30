@@ -1,3 +1,3 @@
 export interface Players {
-  getPlayer: (user: string) => string
+  getPlayer: (io: any) => void
 }
