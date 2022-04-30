@@ -1,4 +1,4 @@
-import { sort } from './protocols/sort'
+import { sort } from './interfaces/sort'
 import utils from '../utils/arrays.tools'
 
 export class Round implements sort {
