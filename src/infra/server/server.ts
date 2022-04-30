@@ -11,7 +11,7 @@ const server = new Server(app)
 const io = new Socketio(server)
 
 const lobby = new Lobby(io)
-lobby.createPlayersRoom()
+lobby.prepareRoomToStart()
 
 server.listen(process.env.PORT, () => {
   console.log(`app is listen into ${process.env.PORT}`)

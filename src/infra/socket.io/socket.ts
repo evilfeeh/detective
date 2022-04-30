@@ -7,9 +7,7 @@ export default class Socket {
     this.io = new Server(server)
   }
 
-  connect (): void {
-    this.io.on('connection', (socket) => {
-      console.log('user connected', socket.id)
-    })
+  connect (): any {
+    return this.io
   }
 }
