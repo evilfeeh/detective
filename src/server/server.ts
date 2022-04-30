@@ -1,7 +1,7 @@
 import express from 'express'
 import router from './router'
 import { Server } from 'http'
-import Socketio from '../socket.io/server'
+import Socketio from '../socket.io/socket'
 
 const app = express()
 const server = new Server(app)
