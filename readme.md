@@ -1,4 +1,4 @@
-# detective game
+# 🕵️‍♀️ detective game
 
 This app is a facility to play detective with friends, without use any paper ou pen
 
