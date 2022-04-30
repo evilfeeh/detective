@@ -1,2 +1,2 @@
 import 'dotenv/config'
-import './server/server'
+import './infra/server/server'

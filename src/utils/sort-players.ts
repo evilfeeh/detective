@@ -1,5 +1,5 @@
 import { sort } from './interfaces/sort'
-import utils from '../utils/arrays.tools'
+import utils from './arrays.tools'
 
 export class Round implements sort {
   private bag = ['assassino', 'detetive']

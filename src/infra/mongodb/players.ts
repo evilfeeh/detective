@@ -1,4 +1,4 @@
-import MongoConnection from '../mongodb/connect'
+import MongoConnection from './connect'
 import { players } from './interfaces/players'
 
 export class Players implements players {
