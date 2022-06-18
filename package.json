@@ -2,17 +2,16 @@
   "name": "boilerplate-typescript",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/index.ts",
+  "main": "./src/index.js",
+  "type": "module",
   "scripts": {
-    "start": "sucrase-node ./src/index.ts",
-    "test": "nodemon ./src/index.ts"
+    "start": "node ./src/index.js",
+    "test": "nodemon ./src/index.js"
   },
   "author": "",
   "devDependencies": {
     "@commitlint/cli": "^16.2.1",
     "@commitlint/config-conventional": "^16.2.1",
-    "@types/express": "^4.17.13",
-    "@types/mongodb": "^4.0.7",
     "commitlint": "^16.2.1",
     "eslint": "^7.32.0",
     "eslint-config-standard-with-typescript": "^19.0.1",
@@ -21,14 +20,12 @@
     "eslint-plugin-promise": "^5.2.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.4",
-    "nodemon": "^2.0.15",
-    "typescript": "^4.6.2"
+    "nodemon": "^2.0.15"
   },
   "dependencies": {
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
-    "mongodb": "^4.5.0",
     "socket.io": "^4.4.1",
-    "sucrase": "^3.21.0"
+    "uuid": "^8.3.2"
   }
 }
