@@ -7,12 +7,7 @@ export default class Room {
   }
 
   getRooms () {
-    const rooms = this.database[Symbol.iterator]()
-    const avaliableRooms = []
-
-    for (const room of rooms) {
-      avaliableRooms.push(convertArrayToString(room))
-    }
+    const avaliableRooms = convertArrayToString(this.database)
 
     return {
       avaliableRooms
@@ -21,7 +16,7 @@ export default class Room {
 
   createRoom ({ roomName }) {
     const roomId = uuidv4()
-    this.database.set(roomId, { roomName })
+    this.database.set(roomId, { roomName, players: [] })
     return {
       roomId,
       roomName
