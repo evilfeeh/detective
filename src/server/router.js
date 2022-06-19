@@ -1,8 +1,10 @@
 import { Router } from 'express'
 import Room from '../game/room.js'
-// import { Player } from '../game/player.js'
+import Player from '../game/player.js'
 
 const room = new Room()
+const player = new Player()
+
 const router = Router()
 
 router.get('/', (req, res, next) => {
@@ -20,7 +22,18 @@ router.post('/rooms', (req, res, next) => {
   res.send(createdRoom)
 })
 
-// router.put('/rooms', (req, res, next) => {
+router.get('/players', (req, res, next) => {
+  const players = player.getPlayers()
+  res.status(200).send(players)
+})
+
+router.post('/player', (req, res, next) => {
+  const { playerName } = req.body
+  const playerCreated = player.new({ playerName })
+  res.send(playerCreated)
+})
+
+// router.put('/rooms/:id', (req, res, next) => {
 //   res.send('bananan')
 // })
 
