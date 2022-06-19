@@ -1,3 +1,7 @@
-export default function convertArrayToString (array) {
-  return Object.assign({}, array)
+export default function convertArrayToString (iterableDatabase) {
+  const data = []
+  for (const iterable of iterableDatabase) {
+    data.push(Object.assign({}, iterable))
+  }
+  return data
 }
