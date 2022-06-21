@@ -49,4 +49,8 @@ router.post('/player/rename', (req, res, next) => {
 //   res.send('bananan')
 // })
 
+router.get('/detective', (req, res, next) => {
+  res.send('Eu sou o Batman 🦇')
+})
+
 export default router
