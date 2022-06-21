@@ -14,8 +14,23 @@ export default class Player {
     }
   }
 
-  rename () {
-    return ''
+  rename ({ playerName, hashId }) {
+    const player = this.database.get(hashId)
+    if (!player) {
+      return {
+        updated: false,
+        message: 'hashId not found'
+      }
+    }
+    this.removeFromDatabase(hashId)
+
+    player.playerName = playerName
+    this.database.set(hashId, player)
+    return {
+      updated: false,
+      playerRenamed: true,
+      player
+    }
   }
 
   getPlayers () {
@@ -25,5 +40,9 @@ export default class Player {
     return {
       playersAvaliable
     }
+  }
+
+  removeFromDatabase ({ hashId }) {
+    this.database.delete(hashId)
   }
 }
