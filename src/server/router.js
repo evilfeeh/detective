@@ -33,6 +33,14 @@ router.post('/player', (req, res, next) => {
   res.send(playerCreated)
 })
 
+router.post('/player/rename', (req, res, next) => {
+  const { hashId, playerName } = req.body
+  const playerCreated = player.rename({ playerName, hashId })
+  const statusCode = (!playerCreated.message) ? 200 : 404
+
+  res.status(statusCode).send(playerCreated)
+})
+
 // router.put('/rooms/:id', (req, res, next) => {
 //   res.send('bananan')
 // })
